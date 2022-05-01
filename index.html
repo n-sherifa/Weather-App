@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="src/styles.css" />
+
+    <title>Search engine</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="weather-app">
+        <form class="search-form" id="search-form">
+          <div class="row">
+            <div class="col-6">
+              <input
+                type="search"
+                placeholder="Type a city.."
+                autofocus="on"
+                autocomplete="off"
+                class="form-control shadow-sm"
+              />
+            </div>
+            <div class="row col-6 m-0">
+              <div class="col-6">
+                <input
+                  type="submit"
+                  value="Search"
+                  class="form-control btn btn-primary shadow-sm"
+                />
+              </div>
+              <div class="col-6">
+                <button
+                  type="button"
+                  class="btn btn-success m-0"
+                  id="current-location"
+                >
+                  Current
+                </button>
+              </div>
+            </div>
+          </div>
+        </form>
+        <h1 id="city">Lisbon</h1>
+        <ul>
+          <li id="date">Sunday 19:22</li>
+        </ul>
+        <div class="row">
+          <div class="col-6">
+            <div class="clearfix">
+              <img
+                src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
+                alt="Cloudy icon"
+                class="weather-icon float-left"
+              />
+              <div class="float-left">
+                <span class="temperature" id="temp">19</span
+                ><span class="units">°C | <a href="#">°F</a></span>
+              </div>
+            </div>
+          </div>
+          <div class="col-6">
+            <ul>
+              <li id="humidity">
+                Humidity: 77%
+              </li>
+              <li id="precipitation">
+                Precipitation: 0%
+              </li>
+              <li id="wind">
+                Wind: 8 km/h
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <script src="src/index.js"></script>
+  </body>
+</html>
