@@ -30,15 +30,15 @@ body {
     margin: 20px auto;
     border-radius: 10px;
     max-width: 600px;
-  }
-  
+}
+
   .weather-icon {
     height: 64px;
     width: 64px;
     margin-right: 10px;
-  }
-  
-  .temperature {
+}
+
+.temperature {
     color: rgb(33, 33, 33);
     font-size: 64px;
     font-weight: 400;
@@ -60,5 +60,9 @@ body {
     margin: 20px auto;
     border-radius: 10px;
     max-width: 600px;
-  }
+}
+.footer{
+    margin: 20px auto;
+    max-width: 600px;
+}
   
